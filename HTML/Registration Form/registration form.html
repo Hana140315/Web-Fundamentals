@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <h1>Registration Form</h1>
+        <div>
+            <label>First Name:* </label>
+            <input type="text" name="name" placeholder="Your name..."  >
+        </div> <br>
+        <div>
+            <label>Last Name:* </label>
+            <input type="text" name="name" placeholder="family name..." >
+        </div>
+        <br>
+        <div>
+            <label>Email Address:* </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <br>
+        <div>
+            <label>Passwor:* </label>
+            <input type="text" name="name" placeholder="your password..." >
+        </div>
+        <br>
+        <div>
+            <label>Confirm password:* </label>
+            <input type="text" name="name" placeholder="your password again..." >
+        </div>
+        <br>
+        <div>
+            <label>birthday: </label><br>
+            <input type="date" name="name" placeholder="dd/mm/yyyy..." >
+        </div>
+        <br>
+        <div>
+            <label>Gender Identity: </label><br>
+            <input type="radio" name="Mail" value="Mail" ><label>Mail    </label>
+            <input type="radio" name="Female" value="Female" ><label>Female   </label>
+            <input type="radio" name="Non-binary" value="Non-binary" ><label>Non-binary   </label>
+            <input type="radio" name="no answer" value="Novalue" ><label>I prefer not to answer </label>
+        </div>
+        <br>
+        <div>
+            <label>Short description about myself: </label><br>
+            <textarea name="comment" cols="30" rows="5"></textarea >
+        </div>
+        <br>
+        <div>
+            <label>Favorite Language </label>
+            <select name="language">
+                <option>Java</option>
+                <option>Paython</option>
+                <option>C++</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">Yes, I would like 
+            to receive email offers!</label>
+        </div><br>
+        <input type="button" value="CreatAccount" >
+        <Br>
+        <br>
+        <label>* Indicate a required field </label>
+    </form>
+</body>
+</html>

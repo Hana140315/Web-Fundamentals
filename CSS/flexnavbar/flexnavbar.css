@@ -1,0 +1,27 @@
+.nav{
+    background-color: black;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title{
+    align-items: flex-start;
+    font-family: cursive;
+    font-style: normal;
+    font:bold, white;
+    color:white;
+
+}
+
+.nav-links{
+    color:white;
+    display: inline-block;
+
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+
