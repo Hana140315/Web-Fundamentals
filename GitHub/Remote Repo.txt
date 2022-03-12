@@ -1,0 +1,6 @@
+git init
+git add README.md
+git commit -m "new to git hub"
+git branch -M master
+git remote add origin https://github.com/Hana140315/WebFundamental.git
+git push -u origin master
