@@ -1,0 +1,6 @@
+select * from users;
+select first_name,birthday from users;
+insert into users (first_name,last_name) values('malik','shakaa');
+insert into users (first_name) values('hana');
+update users set last_name = 'albidaq' where id=7;
+delete from users where id=6;

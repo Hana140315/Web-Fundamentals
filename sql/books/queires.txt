@@ -1,0 +1,25 @@
+use books;
+insert into authors (name, created_at, updated_at)
+values ('Lau Tzu', '2022-03-14 144401', '2022-03-14 144401');
+
+insert into books (title, num_of_pages,created_at, updated_at)
+values ('Ruby', 487,'2022-03-14 144401', '2022-03-14 144401');
+select  from books;
+
+update books set title='C#' where id=1;
+update authors set name= 'Bill Austen' where id=1;
+select  from authors; 
+insert into favorites (id, authors_id, books_id) values (1, 1,2);
+insert into favorites (id, authors_id, books_id) values (1,4,5);
+select  from favorites; 
+select name, title from authors join favorites on authors.id=favorites.authors_id
+ join books on favorites.books_id=books.id where books_id=3;
+ 
+ delete from favorites where authors_id=1 and books_id=3; 
+ insert into favorites (id, authors_id, books_id) values (1, 5,3);
+ 
+ select title, name from books join favorites on books.id=favorites.books_id
+ join authors on favorites.authors_id=authors.id where authors_id=3;
+ 
+select name, title from authors join favorites on authors.id=favorites.authors_id
+ join books on favorites.books_id=books.id where books_id=5;
