@@ -1,19 +1,32 @@
 use friendships;
+
 insert into users (id,first_name, last_name) values (6,'Mazen', 'Masoud');
+
 select * from users;
+
 insert into firends (user_id, friend_id) values (6,3);
 
 select * from users join firends on users.id= firends.user_id join
  users as newuser on firends.friend_id=newuser.id;
+
 select * from users join firends on users.id= firends.user_id join
  users as newuser on firends.friend_id=newuser.id where users.id=1;
  
- select count(user_id) from firends;
- select * from users join firends on users.id= firends.user_id join
+ 
+ 
+ select users.first_name from users join firends on users.id= firends.user_id join
  users as newuser on firends.friend_id=newuser.id where users.id=3
  order by users.first_name asc ;
-
-select count(user_id) from firends order by user_id desc;
  
- select * from firends;
+
+ select users.first_name, users.last_name, count(newuser.id)  as num_of_friends 
+	from  users join firends on users.id=firends.user_id 
+	join users as newuser on newuser.id= firends.friend_id
+		group by users.id
+			order by num_of_friends desc limit 2;
+
+
+ 
+
+ 
  
